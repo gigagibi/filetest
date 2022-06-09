@@ -2,7 +2,7 @@ package com.example.filetest.controllers;
 
 import com.example.filetest.dto.ResponseFile;
 import com.example.filetest.dto.ResponseMessage;
-import com.example.filetest.models.File;
+import com.example.filetest.models.entities.File;
 import com.example.filetest.services.FileService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpHeaders;

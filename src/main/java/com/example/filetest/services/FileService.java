@@ -1,6 +1,6 @@
 package com.example.filetest.services;
 
-import com.example.filetest.models.File;
+import com.example.filetest.models.entities.File;
 import com.example.filetest.repositories.FileRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

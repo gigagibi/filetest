@@ -1,4 +1,4 @@
-package com.example.filetest.models;
+package com.example.filetest.models.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

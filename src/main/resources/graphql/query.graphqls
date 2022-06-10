@@ -1,15 +1,15 @@
-type File {
+type Post {
     id: ID!,
     name: String,
-    type: String,
-    data: String
+    desc: String,
+    content: String
 }
 
 type Query {
-    files:[File!]!
-    file(id: ID):File
+    posts:[Post!]!
+    post(id: ID):Post
 }
 
 type Mutation {
-    createFile (name: String!, type: String!, data: String!): File
+    createPost (name: String!, desc: String!, content: String!): Post
 }

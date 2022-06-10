@@ -58,6 +58,12 @@
             <groupId>com.graphql-java</groupId>
             <artifactId>graphql-java-tools</artifactId>
             <version>5.2.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.graphql-java</groupId>
+                    <artifactId>graphql-java</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.graphql-java</groupId>
@@ -82,5 +88,7 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>

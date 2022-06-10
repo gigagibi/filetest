@@ -1,10 +1,11 @@
 package com.example.filetest.models.entities;
 
 import lombok.*;
+import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.util.Objects;
 
-@Data
 @Getter
 @Setter
 @NoArgsConstructor

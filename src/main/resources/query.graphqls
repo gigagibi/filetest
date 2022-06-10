@@ -11,5 +11,5 @@ type Query {
 }
 
 type Mutation {
-    createPost (name: String!, desc: String!, content: String!): Post
+    createPost (name: String!, desc: String!, content: String!): [Post]
 }

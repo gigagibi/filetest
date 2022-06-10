@@ -15,6 +15,7 @@
     <description>filetest</description>
     <properties>
         <java.version>17</java.version>
+        <kotlin.version>1.6.21</kotlin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -50,20 +51,14 @@
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.graphql-java</groupId>
+            <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>graphql-spring-boot-starter</artifactId>
-            <version>5.0.2</version>
+            <version>12.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.graphql-java</groupId>
+            <groupId>com.graphql-java-kickstart</groupId>
             <artifactId>graphql-java-tools</artifactId>
-            <version>5.2.4</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.graphql-java</groupId>
-                    <artifactId>graphql-java</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>12.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.graphql-java</groupId>

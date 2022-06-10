@@ -1,9 +1,8 @@
 package com.example.filetest.graph;
 
-import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.example.filetest.models.entities.Post;
-import com.example.filetest.repositories.PostRepository;
 import com.example.filetest.services.PostService;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

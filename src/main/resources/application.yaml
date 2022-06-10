@@ -21,5 +21,3 @@ spring:
       hibernate:
         format_sql: true
     generate-ddl: true
-  elasticsearch:
-    uris: http://localhost:9200

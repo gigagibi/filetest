@@ -3,12 +3,14 @@ package com.example.filetest.controllers.elastic;
 import com.example.filetest.models.elastic.Product;
 import com.example.filetest.services.elastic.ProductService;
 import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 
+@Profile("elastic")
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api/products/")

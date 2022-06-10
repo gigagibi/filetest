@@ -1,11 +1,13 @@
 package com.example.filetest.repositories.elastic;
 
 import com.example.filetest.models.elastic.Product;
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.elasticsearch.annotations.Query;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 import java.util.List;
 
+@Profile("elastic")
 public interface ProductRepository extends ElasticsearchRepository<Product, String> {
     List<Product> findAllById(String id);
 

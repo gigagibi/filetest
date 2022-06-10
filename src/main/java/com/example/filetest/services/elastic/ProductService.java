@@ -3,11 +3,13 @@ package com.example.filetest.services.elastic;
 import com.example.filetest.models.elastic.Product;
 import com.example.filetest.repositories.elastic.ProductRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Profile("elastic")
 @Service
 @AllArgsConstructor
 public class ProductService {

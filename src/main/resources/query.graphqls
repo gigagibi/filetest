@@ -5,6 +5,12 @@ type Post {
     content: String
 }
 
+input PostInput {
+    name: String,
+    desc: String,
+    content: String
+}
+
 type Query {
     posts:[Post!]!
     post(id: ID):Post

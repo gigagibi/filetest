@@ -1,5 +1,6 @@
 package com.example.filetest.graph;
 
+import com.example.filetest.dto.PostInput;
 import com.example.filetest.models.entities.Post;
 import com.example.filetest.services.PostService;
 import graphql.kickstart.tools.GraphQLMutationResolver;
@@ -16,4 +17,10 @@ public class PostMutation implements GraphQLMutationResolver {
     public List<Post> createPost(String name, String desc, String content) {
         return postService.createPost(new Post(name, desc, content));
     }
+
+    public List<Post> createPost(Post post) {
+//        return postService.createPost(new Post(post.getName(), post.getDesc(), post.getContent()));
+        return postService.createPost(post);
+    }
+
 }
